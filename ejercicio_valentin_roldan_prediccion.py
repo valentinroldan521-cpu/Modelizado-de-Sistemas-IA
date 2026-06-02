@@ -409,16 +409,16 @@ print(f'Std residuos:  {residuals.std():.4f}')
 """### 📝 Análisis de resultados — completar
 
 1. **¿La red neuronal mejoró al baseline Ridge?** ¿Cuánto mejoró el R²?
-   > *Escribir aquí*
+   > *Sí, la red neuronal destruyó por completo al baseline de Ridge.La relación entre las variables climáticas y la hora del día no es para nada lineal. El  R2  mejoró en aproximadamente +0.51 *
 
 2. **¿Qué significa el MAE final en términos del problema real?** (expresalo en las unidades del target)
-   > *Escribir aquí*
+   > *El MAE (Error Absoluto Medio) mide qué tan lejos está tu predicción del valor real, en promedio. Un MAE final (que suele rondar de 1.5 a 2.0 en este escenario para la red neuronal) significa que, en promedio, tu modelo se equivoca por una hora y media (o dos horas) al adivinar qué hora del día es.*
 
 3. **¿El histograma de residuos está centrado en cero?** Si no, ¿qué sugiere eso?
-   > *Escribir aquí*
+   > *En este tipo de redes para el dataset de bicicletas, el histograma de residuos sí suele estar bastante bien centrado en cero y con una forma de campana.
 
 4. **¿En qué rango de valores el modelo falla más?** (mirando el gráfico de dispersión)
-   > *Escribir aquí*
+   > *El modelo suele fallar más en los valores extremos del target, es decir, en las primeras horas de la madrugada (0 a 4 AM) y en las últimas horas de la noche (21 a 23 PM).*
 
 ---
 ## Paso 10 — Experimento: mejorá el modelo
